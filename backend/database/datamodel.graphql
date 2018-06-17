@@ -1,4 +1,6 @@
-type User {
+type Post {
   id: ID! @unique
-  name: String!
+  title: String!
+  content: String!
+  published: Boolean! @default(value: "false")
 }
