@@ -12,6 +12,10 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.12.0",
     "graphql-cli": "^2.16.3",
+    "nodemon": "^1.17.5",
     "prisma": "^1.9.0"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js"
   }
 }
