@@ -31,7 +31,7 @@ const post = {
     return ctx.db.mutation.updatePost(
       {
         where: { id },
-        data: { isPublished: true },
+        data: { published: true },
       },
       info,
     );
