@@ -9,7 +9,7 @@ const post = {
     const id = getUserId(ctx);
 
     const where = {
-      isPublished: false,
+      published: false,
       author: {
         id,
       },

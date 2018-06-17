@@ -1,14 +1,14 @@
 const { getUserId } = require('../../lib/auth');
 
 const post = {
-  async createDraft(parent, { title, text }, ctx, info) {
+  async createDraft(parent, { title, content }, ctx, info) {
     const userId = getUserId(ctx);
     return ctx.db.mutation.createPost(
       {
         data: {
           title,
-          text,
-          isPublished: false,
+          content,
+          published: false,
           author: {
             connect: { id: userId },
           },
