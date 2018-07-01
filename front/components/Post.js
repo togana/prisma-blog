@@ -44,14 +44,14 @@ const Post = (props) => {
         }
 
         return (
-          <dir>
+          <div>
             <h1>
               {post.title}
             </h1>
             <div>
               {post.content}
             </div>
-          </dir>
+          </div>
         );
       }}
     </Query>
