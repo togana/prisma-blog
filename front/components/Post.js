@@ -15,6 +15,14 @@ const POST = gql`
 
 const Post = (props) => {
   const { id } = props.router.query;
+  if (!id) {
+    return (
+      <aside>
+        Error
+      </aside>
+    );
+  }
+
   return (
     <Query query={POST} variables={{ id }}>
       {({ loading, error, data }) => {
