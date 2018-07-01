@@ -59,5 +59,7 @@ typings/
 # dotenv environment variables file
 .env
 
+### https://raw.github.com/github/gitignore/4fbb31c4dadb844215b3bd3fe4ad58b8122c3481/node.gitignore
 
-
+### Custom
+.next
