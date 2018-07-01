@@ -1,7 +1,6 @@
 import React from 'react';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-import { withRouter } from 'next/router';
 
 const POST = gql`
   query post($id: ID!) {
@@ -14,7 +13,7 @@ const POST = gql`
 `;
 
 const Post = (props) => {
-  const { id } = props.router.query;
+  const { id } = props;
   if (!id) {
     return (
       <aside>
@@ -66,4 +65,4 @@ const Post = (props) => {
   );
 };
 
-export default withRouter(Post);
+export default Post;
